@@ -94,7 +94,7 @@ class FlutterConsole extends StatelessWidget {
                             ),
                             Flexible(
                               child: TextField(
-                                autofocus: true,
+                                autofocus: false,
                                 keyboardType: consoleData.keyboardType,
                                 controller: controller.inputController,
                                 focusNode: controller.focusNode,

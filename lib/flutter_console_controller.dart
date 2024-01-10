@@ -4,10 +4,11 @@ import 'package:flutter/material.dart';
 
 class FlutterConsoleController extends ValueNotifier<FlutterConsoleData> {
   FlutterConsoleController({
+    TextInputType keyboardType = TextInputType.text,
     String consoleContent = '',
   }) : super(
           FlutterConsoleData(
-            keyboardType: TextInputType.none,
+            keyboardType: keyboardType,
             consoleContent: consoleContent,
           ),
         );
@@ -64,7 +65,7 @@ class FlutterConsoleController extends ValueNotifier<FlutterConsoleData> {
 
 class FlutterConsoleData {
   FlutterConsoleData({
-    this.keyboardType = TextInputType.none,
+    this.keyboardType = TextInputType.text,
     this.consoleContent = '',
     this.show = true,
   });
